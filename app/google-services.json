@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "730730989710",
+    "project_id": "phone-police",
+    "storage_bucket": "phone-police.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730730989710:android:625d87ada8675474b2e1df",
+        "android_client_info": {
+          "package_name": "com.example.phonepolice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "730730989710-evp2qopd62nha5r2vqqi5qgoh467kfs3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjByLC13JdvWZlZqBnwOAoFGIvOnF-bj4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "730730989710-evp2qopd62nha5r2vqqi5qgoh467kfs3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

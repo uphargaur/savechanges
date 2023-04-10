@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user_tools">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+        <Button
+            android:id="@+id/getlocation"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Users"
+            android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/gettorch"
+            android:layout_width="200dp"
+            android:layout_marginTop="100dp"
+            android:layout_height="50dp"
+            android:text="Turn On torch"
+            android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/Captureimage"
+            android:layout_width="200dp"
+            android:layout_marginTop="100dp"
+            android:layout_height="50dp"
+            android:text="Capture Image"
+            android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/cleardata"
+            android:layout_width="200dp"
+            android:layout_marginTop="100dp"
+            android:layout_height="50dp"
+            android:text="Clear data"
+            android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/location"
+            android:layout_width="200dp"
+            android:layout_marginTop="100dp"
+            android:layout_height="50dp"
+            android:text="Location"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
