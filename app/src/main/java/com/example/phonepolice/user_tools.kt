@@ -1,5 +1,9 @@
 package com.example.phonepolice
-
+//786-u
+//698
+//pracv
+//795
+//798
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
@@ -7,6 +11,7 @@ import android.content.pm.PackageManager
 import android.location.Location
 import android.location.LocationListener
 import android.location.LocationManager
+import android.net.Uri
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -27,6 +32,7 @@ class user_tools : AppCompatActivity() {
         val gettorch:Button=findViewById(R.id.gettorch)
         val Captureimage:Button=findViewById(R.id.Captureimage)
         val cleardata:Button=findViewById(R.id.cleardata)
+        val locationbutton:Button =findViewById(R.id.location)
         getpermisions()
         Savelocation()
         gettorch.setOnClickListener()
@@ -39,6 +45,20 @@ class user_tools : AppCompatActivity() {
             val intent:Intent=Intent(this,display_mobileno::class.java)
             startActivity(intent)
         }
+        locationbutton.setOnClickListener()
+        {
+            //location renew and call by toper and gps
+            val db = Firebase.database
+            val usersRef = db.getReference("users")
+            val latitude =  usersRef.child(username).child(mobileno).child("location").child("lat")
+            val longitude = usersRef.child(username).child(mobileno).child("location").child("log")
+            val label = "Location"
+            val uri = "geo:$latitude,$longitude?q=$latitude,$longitude($label)"
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(uri))
+            startActivity(intent)
+
+        }
+
     }
 
     private fun getpermisions() {
